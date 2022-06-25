@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/3
+
+###
+POST http://localhost:3000/api/products
+content-Type: application/json
+
+{
+    "name": "Iphone Xr",
+    "price": 999,
+    "categoryId": 2
+}
+
+###
+DELETE http://localhost:3000/api/products/2
+
+###
+PATCH http://localhost:3000/api/products/3
+content-Type: application/json
+
+{   
+    "name": "Ipad Pro Max",
+    "price": 1299,
+    "categoryId": 5
+}
